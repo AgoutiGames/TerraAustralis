@@ -1,0 +1,1 @@
+montage "*.png" -tile 5x5 -background transparent -mode concatenate "name.png"
