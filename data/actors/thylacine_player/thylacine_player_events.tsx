@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset name="stage_01_events" tilewidth="60" tileheight="60" tilecount="100" columns="10">
  <image source="../../environment/logic/symbol_numbers.png" width="600" height="600"/>
- <tile id="0" type="GeQuit">
-  <properties>
-   <property name="NAME" value="quit_game"/>
-  </properties>
- </tile>
  <tile id="70" type="AeAccelerate">
   <properties>
    <property name="NAME" value="accelerate_fall"/>
@@ -96,6 +91,13 @@
    <property name="1" value="accelerate_jump"/>
    <property name="2" value="sound_jump"/>
    <property name="NAME" value="jump"/>
+  </properties>
+ </tile>
+ <tile id="99" type="AteOnGround">
+  <properties>
+   <property name="NAME" value="jump_ground"/>
+   <property name="SUCCESS" value="jump"/>
+   <property name="TOLERANCE" type="int" value="5"/>
   </properties>
  </tile>
 </tileset>

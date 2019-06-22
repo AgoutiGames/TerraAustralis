@@ -5,6 +5,7 @@
   <properties>
    <property name="ACTOR_NAME" value="thylacine_player"/>
    <property name="DIRECTION" value="RIGHT"/>
+   <property name="ON_ALWAYS" value="physics"/>
   </properties>
   <objectgroup draworder="index"/>
  </tile>

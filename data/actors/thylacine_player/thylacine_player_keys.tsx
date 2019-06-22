@@ -265,7 +265,7 @@
  <tile id="51" type="KEY_MAPPING">
   <properties>
    <property name="DOWN" type="bool" value="true"/>
-   <property name="EVENT" value="jump"/>
+   <property name="EVENT" value="jump_ground"/>
    <property name="KEYPRESS" value="Space"/>
   </properties>
  </tile>
