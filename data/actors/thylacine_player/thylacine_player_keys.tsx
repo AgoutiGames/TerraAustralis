@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset name="stage_01_keys" tilewidth="60" tileheight="60" tilecount="60" columns="12">
- <image source="../environment/logic/keyboard.png" width="720" height="300"/>
+ <image source="../../environment/logic/keyboard.png" width="720" height="300"/>
  <tile id="0" type="KEY_MAPPING">
   <properties>
    <property name="KEYPRESS" value="X"/>
@@ -130,7 +130,9 @@
  </tile>
  <tile id="25" type="KEY_MAPPING">
   <properties>
+   <property name="EVENT" value="walk_left"/>
    <property name="KEYPRESS" value="A"/>
+   <property name="SUSTAINED" type="bool" value="true"/>
   </properties>
  </tile>
  <tile id="26" type="KEY_MAPPING">
@@ -140,7 +142,9 @@
  </tile>
  <tile id="27" type="KEY_MAPPING">
   <properties>
+   <property name="EVENT" value="walk_right"/>
    <property name="KEYPRESS" value="D"/>
+   <property name="SUSTAINED" type="bool" value="true"/>
   </properties>
  </tile>
  <tile id="28" type="KEY_MAPPING">
@@ -260,6 +264,8 @@
  </tile>
  <tile id="51" type="KEY_MAPPING">
   <properties>
+   <property name="DOWN" type="bool" value="true"/>
+   <property name="EVENT" value="jump"/>
    <property name="KEYPRESS" value="Space"/>
   </properties>
  </tile>
