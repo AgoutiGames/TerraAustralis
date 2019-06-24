@@ -1,5 +1,8 @@
 # TerraAustralis
-A demo game for the RawSalmonEngine revolving around a jumping Thylacine.
+A demo game for the [RawSalmonEngine](https://github.com/AgoutiGames/RawSalmonEngine) revolving around a jumping Thylacine.
+
+# Game footage of version 0.0.1-pre-alpha
+![Gameplay](/essentials/showcase/gameplay.gif)
 
 ## Download compile and run
 Linux:
