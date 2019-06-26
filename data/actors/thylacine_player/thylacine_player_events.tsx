@@ -28,10 +28,34 @@
    <property name="NAME" value="physics"/>
   </properties>
  </tile>
+ <tile id="80" type="AeSetVar">
+  <properties>
+   <property name="NAME" value="fetch_speed"/>
+   <property name="VALUE" value="*__XSPEED"/>
+   <property name="VAL_NAME" value="walk_speed"/>
+  </properties>
+ </tile>
+ <tile id="81" type="AeSetVar">
+  <properties>
+   <property name="*=" type="bool" value="true"/>
+   <property name="NAME" value="divide_speed_right"/>
+   <property name="VALUE" type="float" value="0.003"/>
+   <property name="VAL_NAME" value="walk_speed"/>
+  </properties>
+ </tile>
+ <tile id="82" type="AeSetVar">
+  <properties>
+   <property name="*=" type="bool" value="true"/>
+   <property name="NAME" value="divide_speed_left"/>
+   <property name="VALUE" type="float" value="-0.003"/>
+   <property name="VAL_NAME" value="walk_speed"/>
+  </properties>
+ </tile>
  <tile id="90" type="AeAccelerate">
   <properties>
    <property name="NAME" value="accelerate_right"/>
    <property name="XFACTOR" type="float" value="1500"/>
+   <property name="XMAX_SPEED" type="float" value="500"/>
    <property name="YFACTOR" type="float" value="0"/>
   </properties>
  </tile>
@@ -49,6 +73,7 @@
    <property name="DIRECTION" value="RIGHT"/>
    <property name="GAME_FRAMES" type="int" value="1"/>
    <property name="NAME" value="anim_walk_right"/>
+   <property name="SPEED" value="*walk_speed"/>
   </properties>
  </tile>
  <tile id="93" type="AeAnimate">
@@ -57,19 +82,24 @@
    <property name="DIRECTION" value="LEFT"/>
    <property name="GAME_FRAMES" type="int" value="1"/>
    <property name="NAME" value="anim_walk_left"/>
+   <property name="SPEED" value="*walk_speed"/>
   </properties>
  </tile>
  <tile id="94" type="AeMulti">
   <properties>
    <property name="1" value="accelerate_right"/>
-   <property name="2" value="anim_walk_right"/>
+   <property name="2" value="fetch_speed"/>
+   <property name="3" value="divide_speed_right"/>
+   <property name="4" value="anim_walk_right"/>
    <property name="NAME" value="walk_right"/>
   </properties>
  </tile>
  <tile id="95" type="AeMulti">
   <properties>
    <property name="1" value="accelerate_left"/>
-   <property name="2" value="anim_walk_left"/>
+   <property name="2" value="fetch_speed"/>
+   <property name="3" value="divide_speed_left"/>
+   <property name="4" value="anim_walk_left"/>
    <property name="NAME" value="walk_left"/>
   </properties>
  </tile>
