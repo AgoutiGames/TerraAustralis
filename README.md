@@ -15,7 +15,7 @@ Since the "game" uses the old deprecated event system of the RawSalmonEngine it 
 ## Demo
 <details><summary>Click to expand</summary>
 
-    ![Gameplay](/essentials/showcase/gameplay.gif)
+  ![Gameplay](/essentials/showcase/gameplay.gif)
     
 </details>
 
